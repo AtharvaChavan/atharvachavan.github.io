@@ -14278,17 +14278,64 @@ h5.contact-text {
    🔥 COMPLETE FIX - ALL 4 ISSUES
    ======================================== */
 
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ISSUE #1: Education Background = Skills Background
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
-.w3l-content-12-main {
-    background: var(--bg-light) !important;
-}
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   EDUCATION & SKILLS - MATCHING GREY BACKGROUNDS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
-[data-theme="dark"] .w3l-content-12-main {
-    background: var(--bg-dark-color) !important;
-}
+	/* Education Section */
+	.w3l-content-12-main {
+		background: #eeeeee !important;
+	}
+
+	/* Skills Section */
+	.home-services {
+		background: #eeeeee !important;
+	}
+
+		
+	/* Experience - Pure White */
+	.w3l-experience {
+		background: #ffffff !important;
+	}
+
+	/* Dark Mode */
+	[data-theme="dark"] .w3l-content-12-main,
+	[data-theme="dark"] .home-services {
+		background: #1a1a1a !important;
+	}
+
+	[data-theme="dark"] .w3l-experience {
+		background: #000000 !important;
+	}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SECTION SPACING - About Me & Education
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+	/* About Me - Reduce bottom padding */
+	.w3l-aboutblock {
+		padding-bottom: 2rem !important;
+	}
+
+	/* Education - Increase top padding */
+	.w3l-content-12-main {
+		padding-top: 5rem !important;
+		background: #f5f5f5 !important;
+	}
+
+	/* Mobile Responsive */
+	@media (max-width: 767px) {
+		.w3l-aboutblock {
+			padding-bottom: 1rem !important;
+		}
+		
+		.w3l-content-12-main {
+			padding-top: 3rem !important;
+		}
+	}
+
 
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
