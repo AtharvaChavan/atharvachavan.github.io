@@ -14062,6 +14062,148 @@ h4.inner-text-title {
   font-weight: 700;
 }
 
+/* Skills Grid - All skills visible on one screen */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet - 2 columns */
+@media (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Mobile - 2 columns, compact */
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .box-wrap-grid {
+        padding: 15px 10px !important;
+    }
+    
+    .box-wrap-grid .icon {
+        margin-bottom: 8px !important;
+    }
+    
+    .box-wrap-grid .icon span {
+        font-size: 2rem !important;
+    }
+    
+    .box-wrap-grid h4 {
+        font-size: 0.85rem !important;
+        margin: 0 !important;
+    }
+    
+    #Skills .section-heading h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Ensure all skills fit viewport height on mobile */
+@media (max-width: 576px) {
+    #Skills {
+        padding: 30px 0 !important;
+    }
+    
+    #Skills .container {
+        padding: 15px 0 !important;
+    }
+}
+
+
+/* ========================================
+   PREMIUM SKILLS SECTION - YELLOW HOVER
+   ======================================== */
+
+/* Skills Grid Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Icon - Yellow background by default */
+.box-wrap .icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    background: var(--primary-color) !important; /* YELLOW */
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-wrap .icon span {
+    color: #fff !important; /* White icon */
+    font-size: 40px;
+    line-height: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* HOVER: Toggle yellow ↔ white */
+.box-wrap:hover .icon {
+    background-color: var(--bg-color) !important; /* White */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.box-wrap:hover .icon span {
+    color: var(--primary-color) !important; /* Yellow icon */
+}
+
+/* Tablet - 2 columns */
+@media (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* Mobile - 2 columns, compact */
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .box-wrap .icon {
+        width: 75px !important;
+        height: 75px !important;
+    }
+    
+    .box-wrap .icon span {
+        font-size: 30px !important;
+        line-height: 75px !important;
+    }
+    
+    .box-wrap h4 a {
+        font-size: 13px !important;
+        line-height: 18px !important;
+    }
+    
+    #Skills {
+        padding: 35px 0 !important;
+    }
+}
+
+/* Dark mode */
+[data-theme="dark"] .box-wrap:hover .icon {
+    background-color: var(--bg-dark-color) !important;
+}
+
 /* //skills section */
 
 /* contact */
