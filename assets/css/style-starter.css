@@ -14273,3 +14273,114 @@ h5.contact-text {
     background-clip: text;
 }
 /* //Credits */
+
+/* ========================================
+   🔥 COMPLETE FIX - ALL 4 ISSUES
+   ======================================== */
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ISSUE #1: Education Background = Skills Background
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.w3l-content-12-main {
+    background: var(--bg-light) !important;
+}
+
+[data-theme="dark"] .w3l-content-12-main {
+    background: var(--bg-dark-color) !important;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ISSUE #2: SCROLL-BASED NAVIGATION
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.navbar-nav .nav-item.scrollspy-active .nav-link {
+    color: #ff4c4c !important;
+    border-bottom: 2px solid #ff4c4c !important;
+}
+
+.nav-fixed .navbar-nav .nav-item.scrollspy-active .nav-link {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ISSUE #3: FOOTER WHITE TEXT
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.w3l-footer-22 h3 {
+    color: #ffffff !important;
+    font-weight: bold !important;
+}
+
+.w3l-footer-22 {
+    padding: 3rem 0 !important;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ISSUE #4: MOBILE COLLAPSE
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+@media (max-width: 767px) {
+    #experienceContent,
+    #skillsContent,
+    #formContent {
+        display: none;
+    }
+    
+    #experienceContent.show,
+    #skillsContent.show,
+    #formContent.show {
+        display: block !important;
+    }
+    
+    .btn[data-toggle="collapse"] i {
+        transition: transform 0.3s ease;
+    }
+    
+    .btn[data-toggle="collapse"][aria-expanded="true"] i {
+        transform: rotate(180deg);
+    }
+}
+
+@media (min-width: 768px) {
+    #experienceContent,
+    #skillsContent,
+    #formContent {
+        display: block !important;
+    }
+    
+    .btn[data-toggle="collapse"] {
+        display: none !important;
+    }
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BONUS: Contact Icon Fix
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.contact-address .contact-icon {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.contact-address .contact-icon i {
+    flex-shrink: 0 !important;
+    margin-right: 15px !important;
+}
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   OPTIONAL: Remove Search Bar
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Uncomment if you want to hide search */
+
+.search-right {
+    display: none !important;
+}
+
