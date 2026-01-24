@@ -13968,7 +13968,7 @@ h4.inner-text-title {
 
 /* why section */
 .home-services {
-  background: var(--bg-light);
+  background: #e9ecef);
 }
 
 .box-wrap h4 a {
@@ -14283,7 +14283,7 @@ h5.contact-text {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 .w3l-content-12-main {
-    background: var(--bg-light) !important;
+    background: #e9ecef) !important;
 }
 
 [data-theme="dark"] .w3l-content-12-main {
@@ -14383,4 +14383,5 @@ h5.contact-text {
 .search-right {
     display: none !important;
 }
+
 
