@@ -135,7 +135,7 @@
                     <p class="mt-2">
 						<strong>Technical Sales Engineer</strong> at <strong>LightMetrics</strong>, driving pre-sales and solution design for fleet safety AI across ANZ. <br>
 						✔ <strong>Client-Facing Technical Expert</strong> – Own technical demos, discovery & POCs for international clients, C-suite to field-ops<br>
-						✔ <strong>4.8+ Years in Presales</strong> – Reduced procurement cycles by 41% at Icertis through stakeholder-aligned solution design<br>
+						✔ <strong><span id="yearsExp">4+</span> Years in Presales</strong> – Cross-industry impact: 41% faster procurement cycles at Icertis, 100% pilot-to-onboarding success at LightMetrics<br>
 						✔ <strong>PreSales DNA</strong> – Technical storytelling + Executive presence + Business acumen<br>
 						<strong>Core Expertise:</strong> Fleet Safety AI, Computer Vision & IoT, API Integration, CLM Solutions, SaaS Demos, Proof of Concepts
 					</p>
@@ -287,7 +287,8 @@
 												• Architected enterprise CLM solutions driving <strong>$M+ contract wins</strong> across APAC<br>
 												• Led <strong>C-suite demos</strong> & technical discovery for Fortune 500 clients<br>
 												• Designed custom integrations using <strong>Business APIs </strong><br>
-												• Drove RFP/POC responses with <strong>85%+ win rate</strong>
+												• Drove RFP/POC responses with <strong>85%+ win rate</strong><br>
+											• Reduced procurement cycles by <strong>41%</strong> through stakeholder-aligned solution design
 											</p>
 										</div>
 									</div>
@@ -514,10 +515,10 @@
             <div class="box-wrap">
                 <div class="box-wrap-grid text-center">
                     <div class="icon mb-4">
-                        <span class="fas fa-database"></span>
+                        <span class="fas fa-video"></span>
                     </div>
                     <div class="info">
-                        <h4><a href="#Skills">SQL & Data Analysis</a></h4>
+                        <h4><a href="#Skills">Fleet Safety AI & IoT</a></h4>
                     </div>
                 </div>
             </div>
@@ -942,7 +943,28 @@
 	</script>
 
     <!-- //Js scripts -->
-	
+		<!-- dynamic years-of-experience counter -->
+	<script>
+	(function () {
+		// Set this to the month/year your professional career actually started.
+		// Format: new Date(YEAR, MONTH_INDEX, DAY) — MONTH_INDEX is 0-based (0=Jan).
+		var startDate = new Date(2022, 0, 1); // <-- EDIT THIS to your real start date
+
+		var now = new Date();
+		var totalMonths = (now.getFullYear() - startDate.getFullYear()) * 12
+			+ (now.getMonth() - startDate.getMonth());
+		if (now.getDate() < startDate.getDate()) totalMonths--; // hasn't hit the day-of-month yet this month
+
+		var years = Math.floor(totalMonths / 12);
+		var months = totalMonths % 12;
+		var display = months === 0 ? (years + '+') : (years + '.' + months + '+');
+
+		var el = document.getElementById('yearsExp');
+		if (el) el.textContent = display;
+	})();
+	</script>
+	<!-- //dynamic years-of-experience counter -->
+
 </body>
 
 </html>
